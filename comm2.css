@@ -1,0 +1,452 @@
+/* Reset some default styles */
+
+ /* Set box-sizing to border-box for all elements */
+ *, *::before, *::after {
+    box-sizing: border-box;
+ }
+
+ /* Container for team members */
+ .team-container {
+    display: flex;
+    overflow: hidden;
+ }
+ 
+ /* Individual team member */
+ .team-member {
+    flex: 0 0 auto;
+    margin-right: 20px; /* Adjust spacing between team members */
+    text-align: center; /* Adjust text alignment */
+ }
+ 
+ /* Team member image */
+ 
+ .team-image img {
+    width: 100%; /* Make the image responsive */
+    border-radius: 50%; /* Optional: Add rounded corners to the image */
+ }
+ 
+ /* Navigation and dots container */
+ .team-nav {
+    margin-top: 10px; /* Adjust spacing between team members and navigation */
+    text-align: center;
+ }
+ 
+ /* Individual navigation buttons */
+ .team-prev,
+ .team-next {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #333; /* Adjust button background color */
+    color: #fff; /* Adjust button text color */
+    cursor: pointer;
+    /* Add more styling as needed */
+ }
+ 
+ /* Individual dot */
+ .team-dot {
+    display: inline-block;
+    margin: 0 5px; /* Adjust spacing between dots */
+    width: 10px;
+    height: 10px;
+    background-color: #333; /* Adjust dot color */
+    border-radius: 50%;
+    cursor: pointer;
+    /* Add more styling as needed */
+ }
+ 
+ /* Active dot */
+ .team-dot.active {
+    background-color: #fff; /* Adjust active dot color */
+ }
+ 
+
+ .single-box .icon {
+   display: flex !important;
+
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+
+.single-features .icon {
+   display: flex !important;
+
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.single-works .icon {
+   display: flex !important;
+
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+} 
+
+#Android::after {
+   content: "Android";
+   position: absolute;
+   transform: translate(-15px, -35px);
+   font-size: 30px;
+   opacity: 0;
+   transition: all .2s linear;
+}
+
+#Android .hexa {
+   transition: all .2s linear;
+}
+
+#Android:hover .hexa {
+   transform: scale(1.3);
+}
+
+#Android:hover::after {
+   content: "Android";
+   position: absolute;
+   
+   transform: translate(-15px, -65px);
+   font-size: 30px;
+   opacity: 1;
+}
+
+
+
+#IOS::after {
+   content: "IOS";
+   position: absolute;
+   transform: translate(20px, 80px);
+   font-size: 30px;
+   opacity: 0;
+   transition: all .2s linear;
+}
+
+#IOS .hexa {
+   transition: all .2s linear;
+}
+
+#IOS:hover .hexa {
+   transform: scale(1.3);
+}
+
+#IOS:hover::after {
+   content: "IOS";
+   position: absolute;
+   
+   transform: translate(20px, 105px);
+   font-size: 30px;
+   opacity: 1;
+}
+
+
+
+
+
+
+#backend::after {
+   content: "Backend Development";
+   position: absolute;
+   transform: translate(-25px, -65px);
+   font-size: 20px;
+   opacity: 0;
+   transition: all .2s linear;
+}
+
+#backend .hexa {
+   transition: all .2s linear;
+}
+
+#backend:hover .hexa {
+   transform: scale(1.3);
+}
+
+#backend:hover::after {
+   content: "Backend Development";
+   position: absolute;
+   
+   transform: translate(-25px, -85px);
+
+   opacity: 1;
+}
+
+
+
+#appen::after {
+   content: "App Enhancement";
+   position: absolute;
+   transform: translate(-25px, -50px);
+   font-size: 20px;
+   opacity: 0;
+   transition: all .2s linear;
+}
+
+#appen .hexa {
+   transition: all .2s linear;
+}
+
+#appen:hover .hexa {
+   transform: scale(1.3);
+}
+
+#appen:hover::after {
+   content: "App Enhancement";
+   position: absolute;
+   
+   transform: translate(-25px, -75px);
+
+   opacity: 1;
+}
+
+
+#cloud::after {
+   content: "Cloud";
+   position: absolute;
+   transform: translate(0px, 80px);
+   font-size: 30px;
+   opacity: 0;
+   transition: all .2s linear;
+}
+
+#cloud .hexa {
+   transition: all .2s linear;
+}
+
+#cloud:hover .hexa {
+   transform: scale(1.3);
+}
+
+#cloud:hover::after {
+   content: "Cloud";
+   position: absolute;
+   
+   transform: translate(0px, 105px);
+   font-size: 30px;
+   opacity: 1;
+}
+
+
+#NFT::after {
+   content: "NFT Program";
+   position: absolute;
+   transform: translate(5px, -65px);
+   font-size: 20px;
+   opacity: 0;
+   transition: all .2s linear;
+}
+
+#NFT .hexa {
+   transition: all .2s linear;
+}
+
+#NFT:hover .hexa {
+   transform: scale(1.3);
+}
+
+#NFT:hover::after {
+   content: "NFT Program";
+   position: absolute;
+   
+   transform: translate(5px, -85px);
+
+   opacity: 1;
+}
+
+
+
+#webbuild::after {
+   content: "Web Builders";
+   position: absolute;
+   transform: translate(100px, 25px);
+   font-size: 20px;
+   opacity: 0;
+   transition: all .2s linear;
+}
+
+#webbuild .hexa {
+   transition: all .2s linear;
+}
+
+#webbuild:hover .hexa {
+   transform: scale(1.3);
+}
+
+#webbuild:hover::after {
+   content: "Web Builders";
+   position: absolute;
+   
+   transform: translate(130px, 25px);
+
+   opacity: 1;
+}
+
+
+#webdev::after {
+   content: "Web Development";
+   position: absolute;
+   transform: translate(-15px, 100px);
+   font-size: 20px;
+   opacity: 0;
+   transition: all .2s linear;
+}
+
+#webdev .hexa {
+   transition: all .2s linear;
+}
+
+#webdev:hover .hexa {
+   transform: scale(1.3);
+}
+
+#webdev:hover::after {
+   content: "Web Development";
+   position: absolute;
+   
+   transform: translate(-15px, 125px);
+
+   opacity: 1;
+}
+
+
+#automation::after {
+   content: "Automation";
+   position: absolute;
+   transform: translate(-10px, 80px);
+   font-size: 20px;
+   opacity: 0;
+   transition: all .2s linear;
+}
+
+#automation .hexa {
+   transition: all .2s linear;
+}
+
+#automation:hover .hexa {
+   transform: scale(1.3);
+}
+
+#automation:hover::after {
+   content: "Automation";
+   position: absolute;
+   
+   transform: translate(-10px, 105px);
+
+   opacity: 1;
+}
+
+
+
+#GameDev::after {
+   content: "Game Developers";
+   position: absolute;
+   transform: translate(90px, 25px);
+   font-size: 20px;
+   opacity: 0;
+   transition: all .2s linear;
+}
+
+#GameDev .hexa {
+   transition: all .2s linear;
+}
+
+#GameDev:hover .hexa {
+   transform: scale(1.3);
+}
+
+#GameDev:hover::after {
+   content: "Game Developers";
+   position: absolute;
+   
+   transform: translate(110px, 25px);
+
+   opacity: 1;
+}
+
+
+
+#apidev::after {
+   content: "API Development";
+   position: absolute;
+   transform: translate(-20px, 80px);
+   font-size: 20px;
+   opacity: 0;
+   transition: all .2s linear;
+}
+
+#apidev .hexa {
+   transition: all .2s linear;
+}
+
+#apidev:hover .hexa {
+   transform: scale(1.3);
+}
+
+#apidev:hover::after {
+   content: "API Development";
+   position: absolute;
+   
+   transform: translate(-20px, 105px);
+
+   opacity: 1;
+}
+
+
+
+
+#logodesign::after {
+   content: "Logo Design";
+   position: absolute;
+   transform: translate(-80px, 25px);
+   font-size: 20px;
+   opacity: 0;
+   transition: all .2s linear;
+}
+
+#logodesign .hexa {
+   transition: all .2s linear;
+}
+
+#logodesign:hover .hexa {
+   transform: scale(1.3);
+}
+
+#logodesign:hover::after {
+   content: "Logo Design";
+   position: absolute;
+   
+   transform: translate(-100px, 25px);
+
+   opacity: 1;
+}
+
+
+#UIUX::after {
+   content: "UI/UX Design";
+   position: absolute;
+   transform: translate(10px, -60px);
+   font-size: 20px;
+   opacity: 0;
+   transition: all .2s linear;
+}
+
+#UIUX .hexa {
+   transition: all .2s linear;
+}
+
+#UIUX:hover .hexa {
+   transform: scale(1.3);
+}
+
+#UIUX:hover::after {
+   content: "UI/UX Design";
+   position: absolute;
+   
+   transform: translate(10px, -85px);
+
+   opacity: 1;
+}
+
+
+.navbar-brand{
+   color:mediumslateblue
+}
